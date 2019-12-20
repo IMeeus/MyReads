@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_collection"
+            android:icon="@drawable/ic_book"
+            android:title="My Collection" />
+
+        <item android:title="Filters">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_not_read"
+                        android:icon="@drawable/ic_close"
+                        android:title="Not Read" />
+                    <item
+                        android:id="@+id/nav_reading"
+                        android:icon="@drawable/ic_progress"
+                        android:title="Reading" />
+                    <item
+                        android:id="@+id/nav_have_read"
+                        android:icon="@drawable/ic_check"
+                        android:title="Have Read" />
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="Extra">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_find_books"
+                        android:icon="@drawable/ic_search_black"
+                        android:title="Find Books" />
+                    <item
+                        android:id="@+id/nav_settings"
+                        android:icon="@drawable/ic_settings"
+                        android:title="Settings" />
+                </group>
+            </menu>
+        </item>
+    </group>
+
+</menu>
